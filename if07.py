@@ -1,3 +1,4 @@
+
 def main(temp):
     """
     Display the message according to the following temperature conditions given to you in Celsius:
@@ -13,4 +14,20 @@ def main(temp):
     Returns:
         str: return answer.
     """
-    return
+    if (temp<0):
+        return "Freezing"
+    if (11<=temp and temp<=20):
+        return "Cold"
+    if (1<=temp and temp<=10):
+        return "Very Cold"
+    if (11<=temp and temp<=20):
+        return "Cold"
+    if (21<=temp and temp<=30):
+            return "Normal"
+    if (31<=temp and temp<=40):
+        return "Cold"
+    if (1<=temp and temp<=10):
+            return "Hot"
+    if (temp>40):
+        return "Very Hot"
+print(main(35))
